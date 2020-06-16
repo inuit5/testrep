@@ -16,6 +16,24 @@ h3 {color: rgb(113, 57, 202);
 h4 {color: royalblue; font-family: "Metal"; font-size: 24px;  
 }
 
+#bigbang {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:mediumseagreen;
+    font-size: 32px;
+
+}
+
+.content {
+    color: midnightblue;
+}
+
+.bold {
+    font-weight: bold;
+}
+.img-div{
+    background-color:paleturquoise;
+}
+
 img {width: 300px;}
 
 
