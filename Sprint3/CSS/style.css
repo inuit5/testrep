@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Metal";
+    src: url("Fonts/MetalMania-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+h3 {color: rgb(113, 57, 202); 
+    font-family: "MuseoModerno", cursive; 
+    font-size: 24;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 40px;
+
+}
+h4 {color: royalblue; font-family: "Metal"; font-size: 24px;  
+}
+
+img {width: 300px;}
+
+
+
+
