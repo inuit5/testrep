@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megrendelés</title>
+        <!--
+        <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="page">
+        <nav class="nav">
+            <a target="blank" href="contact.html">Elérhetőség</a>
+            <a target="blank" href="menu.html">Étlap</a>
+            <a target="blank" href="sale.html">Akciók</a>
+        </nav>
+    
+        <h1>Rendelés</h1>
+        <form>
+            <fieldset>
+                <legend>Burger Wizard - Megrendelő lap</legend>
+            <div>
+                <label for="name">Név: *</label>
+                <input id="name" name="name" type="text" value="Név"  required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email: *</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="address">Cím: *</label>
+                <input id="address" name="address" type="text" required>
+            </div>
+            <br>
+            <div>
+                <label for="comment">Megjegyzés: </label>
+                <textarea name="comment" id="comment" rows="5"></textarea>
+                           
+            </div>
+    
+            <br>
+    
+            <span>Extra feltét</span> 
+            <div>
+                <input checked id="nothing" name="extra" type="radio" value="0"> 
+                <label for="nothing">Nem  kérek</label>
+            </div>
+            <div>
+                <input id="cheese" name="extra" type="radio" value="300"> 
+                <label for="cheese">Sajt</label>
+            </div>       
+            <div>
+                <input id="double-cheese" name="extra" type="radio" value="600"> 
+                <label for="double-cheese">Dupla Sajt</label>
+            </div> 
+            
+            <br>
+                <div>
+                    <label for="souce">Szósz: </label>
+                    <select name="souce" id="souce">
+                        <option value="bbq" selected>BBQ</option>
+                        <option value="Chili">Chili</option>
+                        <option value="teryaki">Teryaki</option>
+                    </select>
+                    <br>
+                    <label for="quantity">Mennyiség (minimum 1, maximum 9):  </label>
+                    <input id="quantity" name="quantity" type="number" min="1" max="9" required>
+                </div>
+            
+            <br>
+            <div class="amount" >
+                <input type="submit" name="submit" value="Rendelés leadása"> 
+                <label for="amount">Ár: </label>
+                <span>1200 Ft</span>
+            </div>
+        </fieldset>
+        </form>
+        </div>
+</body>
+</html>
