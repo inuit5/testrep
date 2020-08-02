@@ -34,7 +34,7 @@ function calcDiv() {
             for (let i = 1; i <= nr2; i++) {
                 if (nr2 % i === 0) {
                     console.log(i);
-                    divs2.push(i)
+                    divs2.push(i);
                     showdiv2.innerHTML = divs2;
 
                 }
@@ -72,25 +72,26 @@ function calcDiv() {
         }
         console.log(greatest);
         showdivgreatest.innerHTML = greatest;
-    }
+    } 
 
-
-}
-
-
-function prim(nr1) {
-    let divnumber = 0;
-    let prim;
-    for (let i = 1; i <= nr1; i++) {
-        if (nr1 %= 0) {
-            divnumber++
+    function prim(nr1) {
+        let divnumber = 0;
+        let prim;
+        for (let i = 1; i <= nr1; i++) {
+            if (nr1 %= 0) {
+                divnumber++
+            }
         }
+        prim = divnumber = 2 ? true : false;
+        showprim.innerHTML = prim;
+        console.log(prim);
+    
     }
-    prim = divnumber = 2 ? true : false;
-  //  showprim.innerHTML = prim;
-    console.log(prim);
 
 }
+
+
+
 
 function isInTheArray(nr){
     let arr=[3,56,23587,458468,352435,9,234,89,234,56,754];
