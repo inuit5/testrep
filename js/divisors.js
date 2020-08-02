@@ -51,15 +51,15 @@ function calcDiv() {
             if (nr1 % i === 0 && nr2 % i === 0) {
                 console.log(i);
                 divsc.push(i);
-                showdivcommon.innerhtml = divsc;
+                showdivcommon.innerHTML = divsc;
             }
         }
-        
-        return divsc
 
+        return divsc
+    
     }
 
-    function calcgreatest(nr1, nr2) {
+/*    function calcgreatest(nr1, nr2) {
         let arr = calccommon(nr1, nr2);
         let greatest = 1;
 
@@ -72,7 +72,22 @@ function calcDiv() {
         }
         console.log(greatest);
         showdivgreatest.innerHTML = greatest;
-    } 
+    } */
+
+    function calcgreatest() {
+        let arr = divsc;
+        let greatest = 1;
+        console.log("Legnagyobb közös")
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > greatest) {
+                greatest = arr[i];
+
+            }
+
+        }
+        console.log(greatest);
+        showdivgreatest.innerHTML = greatest;
+    }
 
     function prim(nr1) {
         let divnumber = 0;
@@ -82,7 +97,7 @@ function calcDiv() {
                 divnumber++
             }
         }
-        prim = divnumber = 2 ? true : false;
+        prim = divnumber == 2 ? true : false;
         showprim.innerHTML = prim;
         console.log(prim);
     
