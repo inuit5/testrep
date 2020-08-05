@@ -19,6 +19,7 @@ function calcDiv() {
     function calc(nr1, nr2) {
         divs1 = [];
         if (nr1 > 1) {
+            console.log("Első")
             for (let i = 1; i <= nr1; i++) {
                 if (nr1 % i === 0) {
                     console.log(i);
@@ -91,18 +92,20 @@ function calcDiv() {
 
     function prim(nr1) {
         let divnumber = 0;
-        let prim;
+      //  let prim;
         for (let i = 1; i <= nr1; i++) {
             if (nr1 %= 0) {
-                divnumber++
+                divnumber++;
             }
         }
-        prim = divnumber == 2 ? true : false;
-        showprim.innerHTML = prim;
-        console.log(prim);
+        
+      //  prim = divnumber = 2  ? true : false;
+        return (divnumber == 2  ? true : false)
+        //showprim.innerHTML = prim;
+       // console.log(prim(nr1));
     
     }
-
+    console.log(prim(nr1));
 }
 
 
