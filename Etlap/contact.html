@@ -9,12 +9,72 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-    <div class="page">
-        <a target="blank" href="contact.html">Elérhetőség</a>
-        <a target="blank" href="menu.html">Étlap</a>
-        <a target="blank" href="sale.html">Akciók</a>
-        <a target="blank" href="order-form.html">Rendelés</a>
+<body onload="weatherWidget()" >
+    <script src="./js/main.js"></script>
+    <script src="./js/weather.js"></script>
+
+      <div class="page">
+
+        <div class="caontainer widget">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col">
+                            <p class="left" >Időjárás: <span id="xy"></span> </p>
+                        </div>
+                        <div class="col">
+                            <p class="right"> <span id="temperature"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-inline col-12">
+                            <div class="form-group">
+                                <label for="day" class="sr-only">Nap</label>
+                                <select class="form-control form-control mb-2 mr-sm-2" name="day" id="day">
+                                    <option value="0" selected>Hétfő</option>
+                                    <option value="1">Kedd</option>
+                                    <option value="2">Szerda</option>
+                                    <option value="3">Csütörtök</option>
+                                    <option value="4">Péntek</option>
+                                    <option value="5">Szombat</option>
+                                    <option value="6">Vasárnap</option>
+                                </select>
+                            </div>
+                            <input type="button" onclick="weatherWidget()" class="btn btn-success mb-2 mr-sm-2 weather"
+                                value="Mutasd">
+                            </form>
+                        </div>
+                    </div>
+                   <!--  <div class="col-3">
+                        <div class="row">
+                            <div id="temperature" class="col-12"></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-12">
+                <div class="row" >
+                    <div class="col">
+                        <p class="left" >Minimum: <span id="tempMin"></span> </p>
+                    </div>
+                    <div class="col">
+                        <p class="center" >Maximum: <span id="tempMax"></span> </p>
+                    </div>
+                    <div class="col">
+                        <p class="right" >Átlag: <span id="tempAvg"></span> </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+                    <nav class="nav">
+                        <a target="blank" href="contact.html">Elérhetőség</a>
+                        <a target="blank" href="menu.html">Étlap</a>
+                        <a target="blank" href="sale.html">Akciók</a>
+                        <a target="blank" href="order-form.html">Rendelés</a>
+                    </nav>
         
     <h1>Elérhetőségünk</h1>
         <h2>Címünk</h2>

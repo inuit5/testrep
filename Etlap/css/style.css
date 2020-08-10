@@ -28,7 +28,54 @@ body {
 
 }
 
+.widget {
+    color: rgb(255, 208,0);
+    background-color: maroon;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 
+}
+
+
+.btn.btn-success.weather {
+    background-color: rgb(255, 208,0);
+    color: maroon;
+}
+
+.Temperature {
+    text-align: right;
+}
+
+.offer {
+    font-size: smaller;
+}
+
+
+
+.left {
+    text-align: left;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+    font-size: smaller;
+}
+
+.right {
+    text-align: right;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.widget p {
+
+    margin-bottom: 0;
+}
 
 a {
     color: rgb(255, 208,0);
