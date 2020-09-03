@@ -62,7 +62,7 @@ const User = {
 
     showAll() {
 
-        for (let i = 0; i < this.users.lenght; i += 1) {
+        for (let i = 0; i < this.users.length; i += 1) {
             this.addNewRow(this.users[i]);
         }
     },
