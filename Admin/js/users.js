@@ -1,6 +1,14 @@
 const User = {
     //  users: findAll(),
     editIsEnabled: false,
+    config: {
+        baseUrl: 'http://localhost',
+        portNumber: 3000,
+        dataUrl: 'users',
+        url() {
+            return `${this.baseUrl}:${this.portNumber}/${this.dataUrl}`;
+         },
+    },
 
     findAll() {
         fetch(`${this.config.url()}`)
@@ -106,8 +114,9 @@ const User = {
     },
 
     init() {
-        this.showAll();
-        this.create();
+      //  this.showAll();
+       // this.create();
+       this.findAll();
 
     },
 
